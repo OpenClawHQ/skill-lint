@@ -1,0 +1,35 @@
+{
+  "name": "@afkv/skill-lint",
+  "version": "0.1.0",
+  "description": "Lint and validate OpenClaw SKILL.md files before publishing",
+  "type": "module",
+  "bin": {
+    "skill-lint": "./bin/skill-lint.js"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "lint": "node ./bin/skill-lint.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "lint",
+    "validate",
+    "skill.md"
+  ],
+  "author": "OpenClawHQ Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenClawHQ/skill-lint"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
+}
