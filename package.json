@@ -4,7 +4,7 @@
   "description": "Lint and validate OpenClaw SKILL.md files before publishing",
   "type": "module",
   "bin": {
-    "skill-lint": "./bin/skill-lint.js"
+    "skill-lint": "bin/skill-lint.js"
   },
   "scripts": {
     "test": "node --test test/**/*.test.js",
@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OpenClawHQ/skill-lint"
+    "url": "git+https://github.com/OpenClawHQ/skill-lint.git"
   },
   "files": [
     "bin",
