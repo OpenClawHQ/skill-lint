@@ -1,61 +1,61 @@
-# 用个人 npm 账号发布 skill-lint
+# Publish skill-lint with a personal npm account
 
-包名已设为 `@afkv/skill-lint`，用你的 npm 账号发布后，别人即可 `npx @afkv/skill-lint`。
+The package name is set to `@afkv/skill-lint`. After you publish with your npm account, others can run `npx @afkv/skill-lint`.
 
 ---
 
-## 第一步：改包名
+## Step 1: Set the package name
 
-打开 `package.json`，把 `name` 从：
+In `package.json`, set `name` from:
 
 ```json
 "name": "@openclawHQ/skill-lint"
 ```
 
-改成（已按你的 npm 用户名 `afkv` 配置）：
+to (already set for npm user `afkv`):
 
 ```json
 "name": "@afkv/skill-lint"
 ```
 
-保存文件。
+Save the file.
 
 ---
 
-## 第二步：登录 npm
+## Step 2: Log in to npm
 
-在终端执行（会提示输入 Username、Password、Email、OTP 等）：
+In the terminal:
 
 ```bash
 npm login
 ```
 
-按提示用你在 https://www.npmjs.com 的账号登录。
+Enter your npm username, password, email, and one-time password (if 2FA is enabled) when prompted.
 
 ---
 
-## 第三步：发布
+## Step 3: Publish
 
-在项目根目录执行（scoped 包必须加 `--access public`，否则会变成私有包）：
+From the project root (scoped packages require `--access public` or they stay private):
 
 ```bash
 cd /Users/dujiayi/Desktop/OpenClawHQ/skill-lint
 npm publish --access public
 ```
 
-成功后会看到类似：`+ @afkv/skill-lint@0.1.0`
+On success you will see something like: `+ @afkv/skill-lint@0.1.0`
 
 ---
 
-## 第四步：别人怎么用
+## Step 4: How others use it
 
-任何人（包括你自己）可以：
+Anyone (including you) can run:
 
 ```bash
 npx @afkv/skill-lint
 ```
 
-或先安装再运行：
+Or install globally then run:
 
 ```bash
 npm install -g @afkv/skill-lint
@@ -64,6 +64,6 @@ skill-lint
 
 ---
 
-## 可选：以后要改成 org 包
+## Optional: Switch to an org package later
 
-如果之后在 npm 上创建了 **openclawHQ** 组织，并把你的账号加进去，可以把 `package.json` 的 `name` 改回 `@openclawHQ/skill-lint`，改一下版本号（例如 `0.1.1`），再执行一次 `npm publish --access public`。两个包名可以并存（一个是你个人的，一个是 org 的）。
+If you create an **openclawHQ** organization on npm and add your account, you can change `package.json` `name` back to `@openclawHQ/skill-lint`, bump the version (e.g. to `0.1.1`), and run `npm publish --access public` again. Both package names can coexist (one under your user, one under the org).

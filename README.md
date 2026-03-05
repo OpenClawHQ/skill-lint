@@ -1,5 +1,9 @@
 # skill-lint
 
+[![npm](https://img.shields.io/npm/v/@openclawHQ/skill-lint?color=E03E3E&logo=npm&logoColor=white)](https://www.npmjs.com/package/@openclawHQ/skill-lint) [![CI](https://github.com/OpenClawHQ/skill-lint/actions/workflows/ci.yml/badge.svg)](https://github.com/OpenClawHQ/skill-lint/actions) [![Node.js ≥ 18](https://img.shields.io/badge/node-%3E%3D18-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/OpenClawHQ/.github/blob/main/CONTRIBUTING.md)
+
+**[中文文档 →](./README.zh.md)**
+
 A lightweight Node.js CLI tool for linting and validating OpenClaw SKILL.md files before publishing to ClawHub.
 
 ## Overview
@@ -199,8 +203,8 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
       - run: npm install -g @openclawHQ/skill-lint
       - run: skill-lint SKILL.md
 ```
@@ -279,9 +283,9 @@ MIT - See LICENSE file
 
 ## Links
 
-- [OpenClaw](https://github.com/OpenClawHQ/openclaw) - Main project
+- [OpenClaw](https://github.com/openclaw/openclaw) - Main project
 - [ClawHub](https://clawhub.com) - Official skill registry
-- [SKILL.md Specification](https://github.com/OpenClawHQ/openclaw/docs/SKILL.md) - Full format documentation
+- [SKILL.md Specification](https://github.com/openclaw/openclaw/docs/SKILL.md) - Full format documentation
 
 ---
 

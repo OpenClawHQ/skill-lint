@@ -1,4 +1,4 @@
-# Dependabot: 依赖升级 PR
+# Dependabot: dependency upgrade PRs
 version: 2
 updates:
   - package-ecosystem: "npm"
